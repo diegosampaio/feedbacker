@@ -1,16 +1,21 @@
 <template>
   <teleport to="body">
-    <div v-if="state.isActive"
+    <div
+      v-if="state.isActive"
+      class="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-50"
       @click="handleModalToogle({ status: false })"
-      class="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-black bg-opacity-50">
-      <div class="fixed mx-10"
+    >
+      <div
+        class="fixed mx-10"
         :class="state.width"
-        @click.stop>
-        <div class="flex flex-col overflow-hidden bg-white rounded-lg animate__animated animate__fadeInDown">
-          <div class="flex flx-col px-12 py-10 bg-white">
+        @click.stop
+      >
+        <div class="flex flex-col overflow-hidden bg-white rounded-lg animate__animated animate__fadeInDown animate__faster">
+          <div class="flex flex-col px-12 py-10 bg-white">
             <component :is="state.component" />
           </div>
         </div>
+
       </div>
     </div>
   </teleport>
