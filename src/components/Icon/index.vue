@@ -4,8 +4,9 @@
 
 <script>
 import LoadingIcon from './Loading.vue'
+import CopyIcon from './Copy.vue'
 export default {
-  components: { LoadingIcon },
+  components: { LoadingIcon, CopyIcon },
   props: {
     name: { type: String, required: true }
   }
