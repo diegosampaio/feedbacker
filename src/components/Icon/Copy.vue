@@ -11,7 +11,6 @@
 <script>
 
 export default {
-  name: 'CopyIcon',
   props: {
     size: { type: [String, Number], default: 22 },
     color: { type: String, default: 'white' }

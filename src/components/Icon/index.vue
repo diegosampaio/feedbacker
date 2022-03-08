@@ -3,10 +3,11 @@
 </template>
 
 <script>
-import LoadingIcon from './Loading.vue'
-import CopyIcon from './Copy.vue'
+import Loading from './Loading.vue'
+import Copy from './Copy.vue'
 export default {
-  components: { LoadingIcon, CopyIcon },
+  /* eslint-disable */
+  components: { Loading, Copy },
   props: {
     name: { type: String, required: true }
   }

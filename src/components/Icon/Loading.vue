@@ -10,7 +10,6 @@
 <script>
 
 export default {
-  name: 'LoadingIcon',
   props: {
     size: { type: [String, Number], default: 22 },
     color: { type: String, default: 'white' }
